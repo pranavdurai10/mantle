@@ -1,0 +1,18 @@
+# mantle package
+torch
+torchvision
+numpy
+pillow
+tqdm
+h5py
+scikit-image
+scipy
+scikit-learn
+seaborn
+matplotlib
+opencv-python
+
+# Geospatial dataset tooling 
+rasterio
+shapely
+click
