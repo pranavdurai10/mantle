@@ -1,7 +1,7 @@
 # MANTLE
 
 <p align="center">
-  <img src="assets/mantle_repo_art.png" alt="MANTLE Logo" width="200"/>
+  <img src="assets/mantle_repo_art.png" alt="MANTLE Logo" width="500"/>
 </p>
 
 <p align="center">
