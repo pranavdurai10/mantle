@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/License-MIT-blue.svg"/>
   </a>
   <img src="https://img.shields.io/badge/Python-3.10+-green.svg"/>
-  <img src="https://img.shields.io/badge/PyTorch-2.0+-orange.svg"/>
+  <img src="https://img.shields.io/badge/PyTorch-2.8-orange.svg"/>
 </p>
 
 ---
