@@ -20,10 +20,12 @@
 ## Developers
 
 **Pranav Durai**
-Stanford Center for Innovation in In Vivo Imaging, Stanford University School of Medicine, Stanford, CA 94305
+
+Affiliation: Stanford Center for Innovation in In Vivo Imaging, Stanford University School of Medicine, Stanford, CA 94305
 
 **Dr. Gary Doran**
-Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA 91109
+
+Affiliation: Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA 91109
 
 ---
 
