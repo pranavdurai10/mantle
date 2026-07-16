@@ -22,7 +22,7 @@
 **Pranav Durai**
 Stanford Center for Innovation in In Vivo Imaging, Stanford University School of Medicine, Stanford, CA 94305
 
-**Dr. Gary B. Doran**
+**Dr. Gary Doran**
 Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA 91109
 
 ---
