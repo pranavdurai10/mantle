@@ -27,7 +27,16 @@
 
 ## Publication Status
 
-This work is currently under review for publication. Datasets and model weights would be made available here shortly. 
+This work is currently under review at **IEEE Transactions on Aerospace and Electronic Systems (TAES)**.
+
+### Datasets
+
+| Dataset | DOI |
+|---------|-----|
+| HiRISE Landform Classification Dataset | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21300384.svg)](https://doi.org/10.5281/zenodo.21300384) |
+| MSL Boulder Segmentation Dataset | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21313774.svg)](https://doi.org/10.5281/zenodo.21313774) |
+
+Model weights will be made available upon acceptance.
 
 ## Installation
 ```bash
