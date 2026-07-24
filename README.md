@@ -77,7 +77,7 @@ python -m mantle.main --mode infer-classification
 
 ```
 
-NOTE: Run with `-m` from the repo root, not `python mantle/main.py` as the package uses relative imports internally, which only resolve correctly when Python loads it as `mantle.main` rather than as a standalone script.
+> NOTE: Run with `-m` from the repo root, not `python mantle/main.py` as the package uses relative imports internally, which only resolve correctly when Python loads it as `mantle.main` rather than as a standalone script.
 
 ## Project Layout
 ```
