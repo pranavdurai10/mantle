@@ -72,7 +72,7 @@ mantle/                             # repo root — run everything from here
 
 ## Quick Start
 
-All five capabilities run as a module from the **repo root** (`mantle/`), via `python -m mantle.main --mode <mode>`:
+All capabilities run as a module from the **repo root** (`mantle/`), via `python -m mantle.main --mode <mode>`:
 
 A. Boulder Segmentation Capability
 ```bash
