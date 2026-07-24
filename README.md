@@ -43,33 +43,6 @@ Model weights will be made available upon acceptance.
 pip install -r requirements.txt
 ```
 
-## Project Layout
-```
-mantle/                             # repo root — run everything from here
-├── README.md
-├── requirements.txt
-└── mantle/                         # the importable package
-    ├── __init__.py
-    ├── main.py                         # single entry point — see below
-    ├── configs.py
-    ├── model.py
-    ├── feature_extractor.py
-    ├── train_weighted.py
-    ├── train_classification.py
-    ├── inference_lightweight.py
-    ├── inference_classification.py
-    ├── utils.py
-    └── data_pipeline/                  # standalone data-prep tools (run directly, not via main.py)
-        ├── extract_hirise_cutouts.py   # full-res HiRISE cutout generator
-        ├── parse_unique_hirise_files.py
-        ├── download_mastcam.py
-        ├── fetch_pds.py
-        ├── msl_vlm_filter.py
-        ├── auto_SAM2_mask_generator.py
-        ├── boulder_mask_explorator.py
-        └── drivers/                    # annotation/trace data consumed by the scripts above
-```
-
 ## Quick Start
 
 All capabilities run as a module from the **repo root** (`mantle/`), via `python -m mantle.main --mode <mode>`:
@@ -97,6 +70,34 @@ python -m mantle.main --mode infer-classification
 ```
 
 NOTE: Run with `-m` from the repo root, not `python mantle/main.py` as the package uses relative imports internally, which only resolve correctly when Python loads it as `mantle.main` rather than as a standalone script.
+
+## Project Layout
+```
+mantle/                             # repo root — run everything from here
+├── README.md
+├── requirements.txt
+└── mantle/                         # the importable package
+    ├── __init__.py
+    ├── main.py                         # single entry point — see below
+    ├── configs.py
+    ├── model.py
+    ├── feature_extractor.py
+    ├── train_weighted.py
+    ├── train_classification.py
+    ├── inference_lightweight.py
+    ├── inference_classification.py
+    ├── utils.py
+    └── data_pipeline/                  # standalone data-prep tools (run directly, not via main.py)
+        ├── extract_hirise_cutouts.py   # full-res HiRISE cutout generator
+        ├── parse_unique_hirise_files.py
+        ├── download_mastcam.py
+        ├── fetch_pds.py
+        ├── msl_vlm_filter.py
+        ├── auto_SAM2_mask_generator.py
+        ├── boulder_mask_explorator.py
+        └── drivers/                    # annotation/trace data consumed by the scripts above
+```
+
 
 ## Command Line Interface
 
