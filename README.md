@@ -70,48 +70,6 @@ mantle/                             # repo root — run everything from here
         └── drivers/                    # annotation/trace data consumed by the scripts above
 ```
 
-## Dataset Structure
-
-### High-Resolution MSL Boulder Dataset
-
-```
-msl_boulder_dataset/
-├── train/
-│   └── boulders/
-│       ├── images/
-│       │   ├── image_001.PNG
-│       │   └── ...
-│       └── masks/
-│           ├── image_001.PNG
-│           └── ...
-└── val/
-    └── boulders/
-        ├── images/
-        └── masks/
-```
-
-- **Image/mask format**: `.PNG`/`.png` (grayscale binary masks, 0 = background, 255 = boulder)
-- **Naming convention**: image and mask share the same filename
-- Images are resized to 784×784 (56×56 DINOv2 patch grid) — see `configs.py`
-
-### High-Resolution HiRISE Landform Dataset
-
-```
-terrain-classification-dataset/
-├── train/
-│   ├── crater/*.jpg
-│   ├── dark_dune/*.jpg
-│   ├── slope_streak/*.jpg
-│   ├── bright_dune/*.jpg
-│   ├── impact_ejecta/*.jpg
-│   ├── swiss_cheese/*.jpg
-│   └── spider/*.jpg
-└── test/
-    └── (same 7 class subfolders)
-```
-
-`train-classification` automatically splits `train/` into 80% train / 20% validation.
-
 ## Quick Start
 
 All five capabilities run as a module from the **repo root** (`mantle/`), via `python -m mantle.main --mode <mode>`:
