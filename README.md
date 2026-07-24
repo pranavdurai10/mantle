@@ -130,7 +130,7 @@ python -m mantle.main --mode {extract,train,inference,train-classification,infer
 | `--inference-batch-size` | int | 32 | Inference batch size |
 | `--visualize` | flag | False | Generate visualization grids |
 
-### INference: Args for Classification (`--mode train-classification` / `infer-classification`)
+### Inference: Args for Classification (`--mode train-classification` / `infer-classification`)
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
