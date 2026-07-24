@@ -36,12 +36,20 @@ This work is currently under review at **IEEE Transactions on Aerospace and Elec
 | HiRISE Landform Classification Dataset | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21300384.svg)](https://doi.org/10.5281/zenodo.21300384) |
 | MSL Boulder Segmentation Dataset | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21313774.svg)](https://doi.org/10.5281/zenodo.21313774) |
 
-Model weights will be made available upon acceptance.
+> Model weights will be made available upon acceptance.
 
 ## Installation
+
 ```bash
+# Clone the repository
+git clone https://github.com/pranavdurai10/mantle.git
+cd mantle
+
+# Install dependencies
 pip install -r requirements.txt
 ```
+
+> A pip-installable PyPI package is coming soon.
 
 ## Quick Start
 
