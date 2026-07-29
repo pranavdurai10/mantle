@@ -13,6 +13,9 @@
   </a>
   <img src="https://img.shields.io/badge/Python-3.10+-green.svg"/>
   <img src="https://img.shields.io/badge/PyTorch-2.8-orange.svg"/>
+  <a href="https://github.com/pranavdurai10/mantle">
+    <img src="https://hits.sh/github.com/pranavdurai10/mantle.svg?label=Views&color=brightgreen"/>
+  </a>
 </p>
 
 ---
