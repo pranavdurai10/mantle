@@ -1,10 +1,11 @@
 # MANTLE
-
 <p align="center">
   <img src="assets/mantle_repo_art.png" alt="MANTLE Logo" width="500"/>
 </p>
-
 <p align="center">
+  <a href="https://arxiv.org/abs/2608.28724">
+    <img src="https://img.shields.io/badge/arXiv-2608.28724-b31b1b.svg"/>
+  </a>
   <a href="#">
     <img src="https://img.shields.io/badge/DOI-coming%20soon-lightgrey"/>
   </a>
@@ -21,7 +22,6 @@
 ---
 
 ## Developers
-
 **Pranav Durai** - Stanford Center for Innovation in In Vivo Imaging, Stanford University School of Medicine, Stanford, CA 94305
 
 **Dr. Gary Doran** - Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA 91109
@@ -29,8 +29,9 @@
 ---
 
 ## Publication Status
+This work is available as a preprint on arXiv and is currently under peer review.
 
-This work is currently under review at **IEEE Transactions on Aerospace and Electronic Systems (TAES)**.
+**arXiv**: https://arxiv.org/abs/2608.28724
 
 ### Datasets
 
