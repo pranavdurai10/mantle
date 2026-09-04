@@ -198,3 +198,13 @@ mantle.log                              # Pipeline log
 **Terrain classification** (`--mode train-classification` / `infer-classification`):
 - Overall and per-class Accuracy, Precision, Recall, F1
 - Confusion matrix and most-confused class pairs
+
+---
+
+## License and Copyright
+
+This repository is licensed under the [MIT License](LICENSE).
+
+Copyright © 2026 Pranav Durai and Gary Doran.
+
+Raw HiRISE imagery courtesy of NASA/JPL-Caltech/University of Arizona, available through the University of Arizona HiRISE platform and the NASA Planetary Data System (PDS) under NASA's open data policy. MSL Mastcam imagery courtesy of NASA/JPL-Caltech/MSSS.
