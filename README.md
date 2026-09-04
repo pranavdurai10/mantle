@@ -1,10 +1,10 @@
 # MANTLE
 <p align="center">
-  <img src="assets/mantle_repo_art.png" alt="MANTLE Logo" width="500"/>
-</p>
-<p align="center">
   <a href="https://arxiv.org/abs/2608.28724">
     <img src="https://img.shields.io/badge/arXiv-2608.28724-b31b1b.svg"/>
+  </a>
+  <a href="https://pranavdurai10.github.io/mantle-paper/">
+    <img src="https://img.shields.io/badge/Project%20Page-MANTLE-blue.svg"/>
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/DOI-coming%20soon-lightgrey"/>
