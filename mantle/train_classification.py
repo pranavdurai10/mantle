@@ -118,7 +118,8 @@ class TerrainClassificationTrainer:
         test_loader: DataLoader,
         device: torch.device,
         class_names: List[str],
-        learning_rate: float = 1e-6
+        learning_rate: float = 1e-6,
+        backbone_name: str = "dinov2_vits14"
     ):
         """
         Initialize trainer.
@@ -139,7 +140,8 @@ class TerrainClassificationTrainer:
         self.device = device
         self.class_names = class_names
         self.num_classes = len(class_names)
-        
+        self.backbone_name = backbone_name
+
         # Loss function - CrossEntropy
         self.criterion = nn.CrossEntropyLoss()
         
@@ -361,8 +363,8 @@ class TerrainClassificationTrainer:
         checkpoint_path = Path("checkpoints") / "best_terrain_classification_model.pth"
         if checkpoint_path.exists():
             checkpoint = torch.load(checkpoint_path, map_location=self.device)
-            self.model.load_state_dict(checkpoint['model_state_dict'])
-            logger.info(f"Loaded best model from epoch {checkpoint['epoch']}")
+            self.model.classifier.load_state_dict(checkpoint['classifier_state_dict'])
+            logger.info(f"Loaded best head from epoch {checkpoint['epoch']}")
         
         # Test
         metrics = self.validate(epoch=0, loader=self.test_loader, split_name="Test")
@@ -443,10 +445,12 @@ class TerrainClassificationTrainer:
                 self.best_val_acc = valid_metrics['accuracy']
                 self.best_epoch = epoch
                 
+                # Head-only checkpoint: the frozen DINOv2 backbone is not saved,
+                # it is loaded separately from torch.hub at inference time.
                 checkpoint = {
                     'epoch': epoch,
-                    'model_state_dict': self.model.state_dict(),
-                    'optimizer_state_dict': self.optimizer.state_dict(),
+                    'classifier_state_dict': self.model.classifier.state_dict(),
+                    'backbone_name': self.backbone_name,
                     'metrics': valid_metrics,
                     'class_names': self.class_names
                 }

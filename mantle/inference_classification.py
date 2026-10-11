@@ -145,7 +145,12 @@ class TerrainClassificationInference:
         )
         
         # Load weights
-        self.model.load_state_dict(checkpoint['model_state_dict'])
+        if 'classifier_state_dict' in checkpoint:
+            # Head-only checkpoint; backbone comes from torch.hub above
+            self.model.classifier.load_state_dict(checkpoint['classifier_state_dict'])
+        else:
+            # Legacy full-model checkpoint
+            self.model.load_state_dict(checkpoint['model_state_dict'])
         self.model.eval()
         
         logger.info(f"Model loaded from epoch {checkpoint.get('epoch', 'N/A')}")
